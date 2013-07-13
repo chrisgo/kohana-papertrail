@@ -20,7 +20,7 @@ Installation
 
     if( !defined( 'APPNAME' ) ) define('APPNAME', 'my-awesome-app');
     if( Kohana::config('papertrail.port') && class_exists( 'Papertrail_Log' ) )
-      Kohana::$log->attach(new Papertrail_Log( Kohana::config('papertrail.port') ), array( Kohana::ERROR, Kohana::INFO ) );
+        Kohana::$log->attach(new Papertrail_Log( Kohana::config('papertrail.port') ), array( Kohana::ERROR, Kohana::INFO ) );
 
 1. Log into your Papertrail account and watch the magic.
 
