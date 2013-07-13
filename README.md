@@ -1,5 +1,5 @@
-Papertrail logging via Kohana PHP Framework
-===========================================
+Papertrail logs via Kohana PHP
+==============================
 
 [Papertrail](http://papertrailapp.com) is a great online service that allows you to aggregate log files from all your servers and services, in order to easily keep an eye on all your systems, to grep quickly and even create alerts based on whatever shows up in the logs.
 
