@@ -1,10 +1,7 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
 // Attach to Kohana logging
-if( !defined( 'APPNAME' ) ) define('APPNAME', 'PropertyRate');
-if( Kohana::$config->load('papertrail.port') && class_exists( 'Papertrail_Log' ) )
+if (Kohana::$config->load('papertrail.enabled'))
 {
-	Kohana::$log->attach(new Papertrail_Log(Kohana::$config->load('papertrail.port')), array(
-		Log::ERROR, Log::INFO
-	));
+	Kohana::$log->attach(new Papertrail_Log_Writer());
 }
