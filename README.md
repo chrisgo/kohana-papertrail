@@ -1,10 +1,10 @@
-Papertrail logs via Kohana PHP
-==============================
+Papertrail logs via Kohana PHP (3.3x)
+====
 
 [Papertrail](http://papertrailapp.com) is a great online service that allows you to aggregate log files from all your servers and services, in order to easily keep an eye on all your systems, to grep quickly and even create alerts based on whatever shows up in the logs.
 
 Installation
-------------
+----
 
 1. Copy the folder `kohana-papertrail` in your modules folder.
 1. Create a copy of `modules/kohana-papertrail/config/papertrail.php` to `application/config/papertrail.php`
@@ -22,6 +22,6 @@ Installation
 1. Log into your Papertrail account and watch the magic.
 
 Configuration
--------------
+----
 
 The setup above logs only ERROR and INFO level messages. To also have DEBUG, just add `Log::DEBUG` in the array above.
