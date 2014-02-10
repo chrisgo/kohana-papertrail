@@ -10,7 +10,7 @@
  * @license    http://opensource.org/licenses/MIT
  */
 
-class Papertrail_Log extends Kohana_Log_Writer {
+class Papertrail_Log_Writer extends Log_Writer {
 
     private $url = 'logs.papertrailapp.com';
     private $port = 0;
